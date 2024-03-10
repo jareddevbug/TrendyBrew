@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table Reservation</title>
+</head>
+<body>
+    <div class="reservation-container">
+        <h2>Table Reservation</h2>
+        <form id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="breakfast">Breakfast (4AM - 9AM)</option>
+                <option value="lunch">Lunch (12PM - 5PM)</option>
+                <option value="dinner">Dinner (7PM - 10PM)</option>
+            </select>
+
+            <label for="tableNumber">Table Number:</label>
+            <select id="tableNumber" name="tableNumber" onchange="changeBackground()" required>
+                <option value="1">Table 1 - City Lights View</option>
+                <option value="2">Table 2 - Culinary View</option>
+                <option value="3">Table 3 - Nature View</option>
+            </select>
+            <br>
+            <button type="button" onclick="checkDate()">Submit Reservation</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

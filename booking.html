@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - Booking Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet"/>
+	<script src="script.js"></script>
+	<script src="app.js"></script>
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img\_851f120b-85af-43ee-898d-06ebeefc2de1.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">TrendyBrew</h1>
+								<h6 class="tm-site-description">The best coffee shop in town</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="Booking.html" class="tm-nav-link active">Bookings</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Book now</h2>
+			</header>
+
+            <div class="tm-container-inner tm-featured-image">
+				<div class="row">
+					<div class="col-12">
+						<div class="placeholder-2">
+							<div class="parallax-window-2" data-parallax="scroll" data-image-src="img/about-05.jpg"></div>		
+						</div>
+					</div>
+				</div>
+			</div>
+            <header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Enjoy later!</h2>
+			</header>
+
+            <section id="book-form">
+                <div class="reservation-container">
+                    <h2>Table Booking</h2>
+                    <form id="reservationForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"  required>
+
+						<label for="phone">Phone #:</label>
+                        <input type="phone" id="phone" name="phone"  required>
+
+            
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" onchange="checkDate()" required>
+            
+                        <label for="time">Time:</label>
+                        <select id="time" name="time" required>
+                            <option value="breakfast">Breakfast (4AM - 9AM)</option>
+                            <option value="lunch">Lunch (12PM - 5PM)</option>
+                            <option value="dinner">Dinner (7PM - 10PM)</option>
+                        </select>
+            
+                        <label for="tableNumber">Table Number:</label>
+                        <select id="tableNumber" name="tableNumber" onchange="changeBackground()" required>
+                            <option value="1">Table 1 - City Lights View</option>
+                            <option value="2">Table 2 - Culinary View</option>
+                            <option value="3">Table 3 - Nature View</option>
+                        </select>
+
+						<label for="numberOfGuest">Number of Guest:</label>
+                        <select id="numberOfGuest" name="numberOfGuest" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+                        </select>
+
+						<label for="details">Additional details:</label>
+                        <input type="text" id="details" name="details" required>
+                        <br>
+                        <button type="button" onclick="submitForm()"> Submit Reservation</button>
+                    </form>
+                </div>
+            </section>
+
+
+		</main>
+		
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023 TrendyBrew 
+            
+            | Email: <a rel="nofollow" href="#">TrendyBrew@gmail.com</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="validate.js"></script>	
+	
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Simple House - Login Page</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+<link href="css/all.min.css" rel="stylesheet" />
+<link href="css/templatemo-style.css" rel="stylesheet" />
+
+<link href="login.css" rel="stylesheet"/>
+
+
+
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+<div class="container">
+<!-- Top box -->
+<!-- Logo & Site Name -->
+<div class="placeholder">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/natureview.jpg">
+<div class="tm-header">
+<div class="row tm-header-inner">
+<div class="col-md-6 col-12">
+<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+<div class="tm-site-text-box">
+<h1 class="tm-site-title">TrendyBrew</h1>
+<h6 class="tm-site-description">The best coffee shop in town</h6>	
+</div>
+</div>
+<nav class="col-md-6 col-12 tm-nav">
+<ul class="tm-nav-ul">
+<li class="tm-nav-li"><a href="Login.html" id="loginPageurl" class="tm-nav-link active">Login | Signup📝</a></li>
+</ul>
+</nav>	
+</div>
+</div>
+</div>
+</div>
+
+<main>
+<header class="row tm-welcome-section">
+<h2 class="col-12 text-center tm-section-title">Join us now!</h2>
+</header>
+
+<div class="image-featured">
+<img src="img/SUKICARD.png" alt="">
+</div>
+<header class="row tm-welcome-section">
+<h2 class="col-12 text-center tm-section-title">And get a suki card (Limited)</h2>
+</header>
+
+
+
+
+<section id="loginpage">
+
+<div class="wrapper">
+<div class="title-text">
+<div class="title login">Login Form</div>
+<div class="title signup">Signup Form</div>
+</div>
+<div class="form-container">
+<div class="slide-controls">
+<input type="radio" name="slide" id="login" checked>
+<input type="radio" name="slide" id="signup">
+<label for="login" class="slide login">Login</label>
+<label for="signup" class="slide signup">Signup</label>
+<div class="slider-tab"></div>
+</div>
+<div class="form-inner">
+<!-- Login form -->
+<form id="loginForm" class="login">
+<div class="field">
+<input type="text" id="email" name="email" placeholder="Email Address" onchange="validate()" required>
+</div>
+<div class="field">
+<input type="password" name="password" placeholder="Password" required>
+</div>
+<div class="pass-link"><a href="#">Forgot password?</a></div>
+<div class="field btn">
+<div class="btn-layer"></div>
+<input type="submit" value="Login">
+</div>
+<div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+</form>
+
+<!-- Signup form -->
+<form id="signupForm" class="signup">
+<div class="field">
+<input type="text" name="signup-email" placeholder="Email Address" required>
+</div>
+<div class="field">
+<input type="password" name="signup-password" placeholder="Password" required>
+</div>
+<div class="field">
+<input type="password" name="confirmPassword" placeholder="Confirm password" required>
+</div>
+<div class="field btn">
+<div class="btn-layer"></div>
+<input type="submit" value="Signup">
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+</main>
+
+<footer class="tm-footer text-center">
+<p>Copyright &copy; 2023 TrendyBrew 
+
+| Email: <a rel="nofollow" href="#">TrendyBrew@gmail.com</a></p>
+</footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="login.js"></script>
+
+
+<script>
+  // Client-side JavaScript
+  document.getElementById('loginForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const email = this.elements.email.value;
+    const password = this.elements.password.value;
+
+    try {
+      const response = await fetch('http://localhost:3000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+
+      if (data.success) {
+      // Redirect the user on successful login
+
+      window.location.href = 'http://127.0.0.1:5500/trendy-brew/index.html';
+      alert('Login Success!')
+
+    } else {
+      // Handle unsuccessful login on the client side
+      alert(data.message);
+    }
+
+
+
+
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
+  document.getElementById('signupForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const signupEmail = this.elements['signup-email'].value;
+    const signupPassword = this.elements['signup-password'].value;
+    const confirmPassword = this.elements.confirmPassword.value;
+
+    try {
+      const response = await fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ signupEmail, signupPassword, confirmPassword }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
+
+</script>
+<script src="validate.js"></script>
+
+</body>
+</html>

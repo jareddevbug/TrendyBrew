@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - About Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+    
+    <link href="login.css" rel="stylesheet"/>
+	
+    
+	
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img\_851f120b-85af-43ee-898d-06ebeefc2de1.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">TrendyBrew</h1>
+								<h6 class="tm-site-description">The best coffee shop in town</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Your reservation is being processed!</h2>
+                <h2 class="col-12 text-center tm-section-title">Kindly wait for an email to confirm your payment.</h2>
+			</header>
+
+            <header class="row tm-welcome-section">
+				<h6 class="col-12 text-center tm-section-title rotatingemoji">⚙️</h6>
+			</header>
+
+            <div class="homebtn">
+                <button type="button" href="index.html" id="homebt">Explore✨</button>
+
+            </div>
+
+            
+
+
+		</main>
+		
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023 TrendyBrew 
+            
+            | Email: <a rel="nofollow" href="#">TrendyBrew@gmail.com</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+
+    <script>
+        // Function to rotate the element continuously with a constant speed
+        function rotateElement() {
+          const element = document.querySelector('.rotatingemoji');
+          element.style.transform = `rotate(${rotation}deg)`;
+          rotation += rotationSpeed;
+          requestAnimationFrame(rotateElement);
+        }
+      
+        // Initial rotation angle and constant speed
+        let rotation = 0;
+        const rotationSpeed = 3; // Set your desired rotation speed here
+      
+        // Rotate the element when the page is loaded
+        window.addEventListener('load', rotateElement);
+      </script>
+	
+    <script>
+        // Function to navigate to the home page
+        function navigateToHome() {
+          // Replace 'index.html' with the URL of your home page
+          window.location.href = 'index.html';
+        }
+      
+        // Attach the click event to the button
+        const homeButton = document.getElementById('homebt');
+        homeButton.addEventListener('click', navigateToHome);
+      </script>
+
+</body>
+</html>

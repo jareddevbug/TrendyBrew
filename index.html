@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TrendyBrew - Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+	
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/natureview.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">TrendyBrew</h1>
+								<h6 class="tm-site-description">The best coffee shop in town</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active smooth-scroll">Home</a></li>
+								<li class="tm-nav-li"><a href="#menu-section" class="tm-nav-link smooth-scroll">Menu</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="booking.html" class="tm-nav-link" onclick="UserInfo()">Bookings</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to TrendyBrew</h2>
+				<p class="col-12 text-center">Sip, Snack, Savor: TrendyBrew – Where Every Cup, Bite, and Moment is a Flavorful Celebration!</p>
+			</header>
+			
+			<div class="tm-paging-links" id="menu-section">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Coffee</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Snacks</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Specials</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-coffee" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/1.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Durian Cappucino</h4>
+								<p class="tm-gallery-description">Durian extract, Espresso, Milk, Sugar</p>
+								<p class="tm-gallery-price">₱35</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/2.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Rose Latte</h4>
+								<p class="tm-gallery-description">Rose syrup, Espresso, Milk</p>
+								<p class="tm-gallery-price">₱35</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/3.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Rice Coffee</h4>
+								<p class="tm-gallery-description">Roasted rice, Coffee beans, Water, Sugar (optional)</p>
+								<p class="tm-gallery-price">$30.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/4.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Rainbow Latte</h4>
+								<p class="tm-gallery-description">Espresso, Milk, Food coloring (multiple colors)</p>
+								<p class="tm-gallery-price">$25.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/5.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Malunggay Latte</h4>
+								<p class="tm-gallery-description">Malunggay (Moringa) powder, Espresso, Milk, Honey</p>
+								<p class="tm-gallery-price">$80.25</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/6.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chocnut Latte</h4>
+								<p class="tm-gallery-description">Chocnut (chocolate peanut) powder, Espresso, Milk, Sugar</p>
+								<p class="tm-gallery-price">$20 / $40 / $60</p>
+							</figcaption>
+						</figure>
+					</article>
+					
+				</div> <!-- gallery page 1 -->
+				
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-snacks" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/13.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Enseymada</h4>
+								<p class="tm-gallery-description">All-purpose flour, Butter, Sugar, Eggs, Quezo de Bola (Edam cheese)</p>
+								<p class="tm-gallery-price">$25</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/14.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Bibingka</h4>
+								<p class="tm-gallery-description">Rice flour, Coconut milk, Sugar, Salt, Salted egg, Grated coconut</p>
+								<p class="tm-gallery-price">$30</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/15.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Ice Cream turon</h4>
+								<p class="tm-gallery-description">Bananas, Jackfruit strips, Brown sugar, Spring roll wrappers, Cooking oil, Ice cream (flavor of your choice)</p>
+								<p class="tm-gallery-price">$45</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/16.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Pandesal</h4>
+								<p class="tm-gallery-description">Bread flour, Sugar, Yeast, Salt</p>
+								<p class="tm-gallery-price">$50</p>
+							</figcaption>
+						</figure>
+					</article>
+					
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-specials" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/7.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Cornsilog</h4>
+								<p class="tm-gallery-description">Corned beef, Garlic rice (sinangag), Fried egg</p>
+								<p class="tm-gallery-price">$12.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/8.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chicken Pastil</h4>
+								<p class="tm-gallery-description">Chicken, Banana leaves, Rice, Coconut milk</p>
+								<p class="tm-gallery-price">$15.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/9.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Tocilog</h4>
+								<p class="tm-gallery-description">Tocino (sweet cured pork), Garlic rice (sinangag), Fried egg</p>
+								<p class="tm-gallery-price">$20.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/10.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Bangsilog</h4>
+								<p class="tm-gallery-description">Bangus (milkfish), Garlic rice (sinangag), Fried egg</p>
+								<p class="tm-gallery-price">$30.25</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/11.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Tapsilog</h4>
+								<p class="tm-gallery-description">Tapa (marinated beef), Garlic rice (sinangag), Fried egg</p>
+								<p class="tm-gallery-price">$35.50</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/TrendyBrewProducts/12.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Longsilog</h4>
+								<p class="tm-gallery-description">Longganisa (sausage), Garlic rice (sinangag), Fried egg</p>
+								<p class="tm-gallery-price">$40.50</p>
+							</figcaption>
+						</figure>
+					</article>
+
+				</div> <!-- gallery page 3 -->
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/header2.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">Reminder:</h4>
+							<p class="tm-mb-45">Redistributing this website as a downloadable ZIP file on any online collection site is strictly prohibited. You will need to <a rel="nofollow" href="https://templatemo.com/contact">talk to us</a> for additional permissions. Thank you. <br> -TrendyBrew Team</p>
+							<br><br>
+							<a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+		<section id="loginPage">
+
+		</section>
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023 TrendyBrew 
+            
+            | Email: <a rel="nofollow" href="#">TrendyBrew@gmail.com</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+    // Handle click on paging links
+    $('.tm-paging-link').click(function(e){
+        e.preventDefault();
+
+        // Remove 'active' class from all paging links
+        $('.tm-paging-link').removeClass('active');
+
+        // Add 'active' class to the clicked link
+        $(this).addClass("active");
+
+        var page = $(this).text().toLowerCase();
+
+        // Hide all gallery pages
+        $('.tm-gallery-page').addClass('hidden');
+        
+        // Remove 'hidden' class from the clicked gallery page
+        $('#tm-gallery-page-' + page).removeClass('hidden');
+    });
+});
+	</script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Add smooth scroll to all links with the class "smooth-scroll"
+		document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const targetId = this.getAttribute('href').substring(1);
+				const targetElement = document.getElementById(targetId);
+
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+				}
+			});
+		});
+	});
+</script>
+
+<script src="validate.js"></script>
+</body>
+</html>
